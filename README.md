@@ -16,7 +16,7 @@ The network trains on a small sample dataset to predict multi-label outputs.
 Run the training script:
 
 ```
-python main.py
+python3 main.py
 ```
 
 Watch the loss and accuracy improve over 30,000 epochs.
