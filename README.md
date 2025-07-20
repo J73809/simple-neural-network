@@ -4,7 +4,7 @@ This project implements a basic 3-layer neural network using NumPy.
 It uses ReLU activations in the hidden layers and Sigmoid in the output layer.
 The network trains on a small sample dataset to predict multi-label outputs.
 
-[Click here to watch the demo video](video/vizualization.mp4)
+[Neural network vizualization](video/vizualization.gif)
 
 ---
 
