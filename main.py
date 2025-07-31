@@ -37,8 +37,8 @@ b2 = np.zeros((1, 7))
 w3 = np.random.randn(7, 3)
 b3 = np.zeros((1, 3))
 
-lr = 0.1
-epochs = 30000
+lr = 0.08
+epochs = 20000
 
 for epoch in range(epochs):
     z1 = X @ w1 + b1
@@ -75,7 +75,7 @@ for epoch in range(epochs):
 
     if epoch % 1000 == 0 or epoch == epochs - 1:
         predictions = np.round(a3)
-        correct = predictions == Y
-        sample_correct = np.all(correct, axis=1)
-        accuracy = np.mean(sample_correct) * 100
+        total_outputs = predictions.size
+        correct_outputs = np.sum(predictions == Y)
+        accuracy = (correct_outputs / total_outputs) * 100
         print(f"Epoch {epoch} - Loss: {loss:.5f} - Accuracy: {accuracy:.2f}%")
